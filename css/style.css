@@ -67,7 +67,8 @@ body {
 	line-height: 1.5;
 	font-family: "メイリオ", Meiryo;
 	background-color: #fff;
-	-webkit-font-smoothing: antialiased;	
+	-webkit-font-smoothing: antialiased;
+	overflow: hidden;	
 }
 
 a {
@@ -130,12 +131,17 @@ header {
 }
 
 header .inner {
+	width: 90%;
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
 	justify-content: space-between;
+}
+
+header .sp_gnav_btn {
+	display: none;
 }
 
 header h1 {
@@ -145,7 +151,7 @@ header h1 {
 	font-family: 'Damion', cursive;
 }
 
-header nav ul {
+nav ul {
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -155,24 +161,23 @@ header nav ul {
 	padding-top: 20px;
 }
 
-header nav ul li {
+nav ul li {
 	padding: 0 30px;
 }
 
-header nav ul li a {
+nav ul li a {
 	font-family: 'Damion', cursive;
 	font-size: 1.4rem;
 	display: block;
 	text-align: center;
 }
 
-header nav ul li a span {
+nav ul li a span {
 	display: block;
 	font-size: 0.7rem;
 	text-align: center;
 	color: #5f8180;
 }
-
 
 /* ========================================
 	main visual
@@ -191,6 +196,15 @@ header nav ul li a span {
 	display: block;
 }
 
+#main_v h2 {
+	position: absolute;
+	top: 30%;
+	left: 15%;
+	font-family: 'Special Elite', cursive;
+	font-size: 3rem;
+	text-align: center;
+}
+
 #main_v .scrl_btn {
 	padding-top: 70px;
 	position: absolute;
@@ -198,19 +212,21 @@ header nav ul li a span {
 	bottom: -30px;
 	z-index: 100;
 	display: inline-block;
-	-webkit-transform: translate(0, -50%);
-	-ms-transform: translate(0, -50%);
-	-o-transform: translate(0, -50%);
-	transform: translate(0, -50%);
+	font-family: 'Damion', cursive;
+	font-size: 1.2rem;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
 }
 
 #main_v .scrl_btn span {
 	position: absolute;
-	top: 0;
+	top: 10px;
 	left: 50%;
 	width: 24px;
 	height: 24px;
-	margin-left: -12px;
+	margin-left: -10px;
 	border-left: 3px solid #555;
 	border-bottom: 3px solid #555;
 	-webkit-transform: rotateZ(-45deg);
@@ -256,6 +272,11 @@ header nav ul li a span {
 	display: flex;
 	justify-content: space-between;
 	padding: 120px 0 90px 0;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
 }
 
 #about .about_img {
@@ -271,7 +292,6 @@ header nav ul li a span {
 }
 
 #about .about_txt .ttl01 h2 {
-	padding-left: 30px;
 	text-align: center;
 	margin: 30px 0;
 }
@@ -308,6 +328,10 @@ header nav ul li a span {
 	display: -o-flex;
 	display: flex;
 	justify-content: space-between;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
 	flex-wrap: wrap;
 	margin: 0 30px;
 }
@@ -367,6 +391,11 @@ header nav ul li a span {
 	display: -o-flex;
 	display: flex;
 	justify-content: space-between;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
 	padding: 120px 0 90px 0;
 }
 
@@ -451,6 +480,194 @@ footer .copy {
 	font-size: 0.8rem;
 	text-align: center;
 	padding: 20px 0;
+}
+
+/* ========================================
+	responsive
+========================================= */
+@media screen and (max-width: 959px) {
+	#about .about_desc {
+		padding: 0 50px;
+	}
+
+	#skill .skill_desc .ttl02 {
+		display: block;
+	}
+
+	#skill .skill_desc .ttl02 h3 {
+		padding-bottom: 0;
+	}
+
+	#skill .skill_desc .ttl02 .star {
+		margin-bottom: 16px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	header {
+		width: 100vw;
+		height: 4.0rem;
+		overflow: hidden;
+	}
+
+	header .inner {
+		width: 100%;
+		height: 100%;
+		margin: 0;
+		display: block;
+	}
+
+	header .sp_wrapper {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	header h1 {
+		width: 70%;
+		height: 100%;
+		padding-left: 10%;
+		line-height: 4.0rem;
+	}
+
+	header h1 a {
+		font-size: 1.6rem;
+	}
+
+	header .sp_gnav_btn {
+		display: block;
+		line-height: 4.0rem;
+		padding-top: 5px;
+		width: 20%;
+		text-align: center;
+	}
+
+	header .sp_gnav_btn::before {
+		content: '\f0c9';
+		font-weight: 900;
+		font-family: "Font Awesome 5 Free";
+		line-height: 4.0rem;
+		text-align: center;
+		font-size: 1.6rem;
+	}
+
+	.spnav {
+		height: 100vh;
+		max-height: 667px;
+		/*overflow-y: scroll;*/
+		background-color: #fff;
+		overflow: hidden;
+	}
+
+	.spnav .sp_gnav_btn::before {
+		content: '\f00d';
+	}
+
+	.spnav nav ul {
+		display: block;
+		width: 79%;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+
+	.spnav nav ul li {
+		width: 100%;
+		border-bottom: 2px solid #bfe2dc;
+	}
+
+	.spnav nav ul li a {
+		padding: 24px 0 11px 0;
+		text-align: left;
+		font-size: 1.6rem;
+	}
+
+	.spnav nav ul li a span {
+		display: inline-block;
+		margin-left: 30px;
+		font-size: 0.8rem;
+	}
+
+	#main_v img {
+		width: 200%;
+		position: absolute;
+		right: 45%;
+		top: 0;
+		margin-right: -50%;
+		/*object-fit: contain;*/
+	}
+
+	#main_v h2 {
+		position: absolute;
+		top: 15%;
+		left: 50%;
+		-webkit-transform: translate(-50%, 0);
+		-ms-transform: translate(-50%, 0);
+		-o-transform: translate(-50%, 0);
+		transform: translate(-50%, 0);
+		font-size: 2rem;
+	}
+
+	#about .inner {
+		padding-top: 90px;
+	}
+
+	#about .about_img {
+		width: 100%;
+		height: auto;
+	}
+
+	#about .about_txt {
+		width: 100%;
+		height: auto;
+	}
+
+	#skill .slill_list {
+		margin: 0;
+	}
+
+	#skill .slill_list li {
+		width: 100%;
+		margin-bottom: 30px;
+	}
+
+	#blog .inner {
+		-webkit-flex-wrap: wrap-reverse;
+		-moz-flex-wrap: wrap-reverse;
+		-ms-flex-wrap: wrap-reverse;
+		-o-flex-wrap: wrap-reverse;
+		flex-wrap: wrap-reverse;
+		padding-top: 90px;
+	}
+
+	#blog .blog_desc {
+		padding: 0;
+		text-align: center;
+	}
+
+	#blog .blog_desc p {
+		margin-bottom: 60px;
+	}
+
+	#blog .blog_img {
+		width: 100%;
+		margin-bottom: 30px;
+	}
+
+	#blog .blog_txt {
+		width: 100%;
+	}
+
+	#study  {
+		width: 100%;
+		background-position: center center;
+	}
+
+	#study .ttl01 {
+		margin-bottom: 30px;
+	}
 }
 
 /*#f29ea0 :濃いピンク
