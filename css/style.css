@@ -149,6 +149,17 @@ header h1 {
 	font-weight: bold;
 	line-height: 5.5rem;
 	font-family: 'Damion', cursive;
+	background-image: url(../images/header_pic.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: 2.4rem 2.4rem;
+	background-size: 2.4rem 2.4rem;
+	-ms-background-position-y: center;
+	background-position-y: center;
+}
+
+header h1 a {
+	padding-left: 60px;
+	display: inline-block;
 }
 
 nav ul {
@@ -184,7 +195,7 @@ nav ul li a span {
 ========================================= */
 #main_v {
 	width: 100%;
-	height: 90vh;
+	height: 100vh;
 	position: relative;
 }
 
@@ -456,15 +467,41 @@ nav ul li a span {
 
 #study .ttl01 {
 	text-align: center;
-	margin-bottom: 60px;
+	margin-bottom: 40px;
 }
 
 #study .study_wrapper {
 	width: 100%;
-	height: 500px;
-	padding: 0 10% 0 30%;
+	height: 520px;
+	padding: 5%;
 	background-color: rgba(255, 255, 255, 0.8);
 	border-radius: 10px;
+}
+
+#study .study_wrapper ul {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+
+#study .study_wrapper ul li {
+	width: 45%;
+}
+
+#study .ttl02 {
+	width: 100%;
+	background-image: url(../images/126022_2.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+	padding-left: 60px;
+}
+
+#study .study_desc {
+	padding: 20px 30px 30px 0;
 }
 
 /* ========================================
@@ -612,6 +649,11 @@ footer .copy {
 
 	#about .inner {
 		padding-top: 90px;
+		-webkit-flex-wrap: wrap-reverse;
+		-moz-flex-wrap: wrap-reverse;
+		-ms-flex-wrap: wrap-reverse;
+		-o-flex-wrap: wrap-reverse;
+		flex-wrap: wrap-reverse;
 	}
 
 	#about .about_img {
@@ -622,6 +664,11 @@ footer .copy {
 	#about .about_txt {
 		width: 100%;
 		height: auto;
+		margin-bottom: 60px;
+	}
+
+	#about .about_desc {
+		padding: 0;
 	}
 
 	#skill .slill_list {
