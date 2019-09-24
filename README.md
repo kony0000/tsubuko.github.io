@@ -3,6 +3,3 @@
 
 ## NOTICE
 テストです
-
-## REFERENCES
-- Favicon []()
