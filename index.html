@@ -3,63 +3,75 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>tsubukotori | Portfolio</title>
-	<meta name="description" content="Webデザイナー(コーダー)を目指すtsubukoのポートフォリオサイトです。これまでに身につけたスキルなどをまとめています。">
+	<title>tsubuko | Portfolio</title>
+	<meta name="description" content="Webデザイナー(コーダー)、tsubukoのポートフォリオサイトです。これまでに身につけたスキルなどをまとめています。">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/devicons.min.css">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<meta name="format-detection" content="email=no,telephone=no,address=no">
-	<link rel="shortcut icon" href="favicon.ico"/>
+	<meta name="twitter:card" content="summary" /> 
+	<meta name="twitter:site" content="@tsubuko25" /> 
+	<meta property="og:url" content="https://kony0000.github.io/tsubuko.github.io/" />
+	<meta property="og:title" content="tsubuko Portfolio" />
+	<meta property="og:description" content="Webデザイナー(コーダー)、tsubukoのポートフォリオサイトです。これまでに身につけたスキルなどをまとめています。" />
+	<meta property="og:image" content="https://kony0000.github.io/tsubuko.github.io/img/mainvisual.jpg" />
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Damion" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
+	<link rel="stylesheet" href="css/animate.css">
 	<script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
 	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript" src="js/wow.min.js"></script>
 </head>
 
 <body>
 	<header>
 		<div class="inner">
 			<div class="sp_wrapper">
-				<h1><a href="#">tsubukotori</a></h1>
+				<h1><a href="#">tsubuko</a></h1>
 				<div class="sp_gnav_btn"></div>
 			</div>
 			<nav>
 				<ul>
 					<li><a href="#about">About<span>私のこと</span></a></li>
-					<li><a href="#skill">Skill<span>できること</span></a></li>
-					<li><a href="#blog">Blog<span>日々のこと</span></a></li>
-					<li><a href="#study">Study<span>学びのこと</span></a></li>
+					<li><a href="#skill">Skill<span>スキル</span></a></li>
+					<li><a href="#works">Works<span>制作事例</span></a></li>
+					<!-- <li><a href="#blog">Blog<span>日々のこと</span></a></li> -->
+					<li><a href="#services">Services<span>サービス内容</span></a></li>
 				</ul>
 			</nav>
 		</div>
 	</header>
 	<div id="main_v">
-		<img src="images/mainvisual.jpg" alt="メインビジュアル">
+		<img src="img/mainvisual.jpg" alt="メインビジュアル">
 		<h2>Web&nbsp;Designer<br>Portfolio</h2>
 		<a class="scrl_btn" href="#about"><span></span>Scroll</a>
 	</div>
-	<section id="about">
+	<section id="about" class="wow fadeIn">
 		<div class="inner">
 			<div class="about_img">
-				<img src="images/about_pic4.png" alt="tsubuko写真">
+				<img src="img/about_pic4.png" alt="tsubuko写真">
 			</div>
 			<div class="about_txt">
 				<div class="ttl01">
 					<h2>About<span>私のこと</span></h2>
 				</div>
 				<div class="about_desc">
-					<p>SEとして組み込みソフトウェアの開発に約8年間携わっていました。
-					その後、夫の転勤により退職。独学でWebデザインを学び始めました。<br><br>
-					趣味は読書。好きな葉物野菜はルッコラ。</p>
+					<p class="-space">はじめまして。tsubukoと申します。</p>
+					<p class="-space">SEとして組み込みソフトウェアの開発に約8年間携わっていました。
+					その後、夫の転勤により退職。独学でWebデザインを学び始めました。</p>
+					<p class="-space">丁寧で分かりやすいWebサイト制作を心がけております。</p>
+					<p>インドネシアのジャカルタ在住。</p>
+					<p>趣味は読書、散歩、ヨガ。好きな葉物野菜はルッコラ。</p>
 				</div>
 			</div>
 		</div>
 	</section>
-	<section id="skill">
+	<section id="skill" class="wow fadeIn">
 		<div class="inner">
 			<div class="ttl01">
-				<h2>Skill<span>できること</span></h2>
+				<h2>Skill<span>スキル</span></h2>
 			</div>
 			<ul class="slill_list">
 				<li>
@@ -86,8 +98,8 @@
 							<div class="star"><p>★★☆</p></div>
 						</div>
 						<div class="skill_txt">
-							<p>Webサイトの構築ができます。<br>
-								レスポンシブ対応も可能です。このポートフォリオサイトもレスポンシブ対応しています。</p>
+							<p>Webサイトの構築ができます。</p>
+							<p>レスポンシブ対応も可能です。</p>
 						</div>
 					</div>
 				</li>
@@ -101,7 +113,7 @@
 							<div class="star"><p>★★☆</p></div>
 						</div>
 						<div class="skill_txt">
-							<p>簡単なjQueryをカスタマイズすることができます。調べながらなら使えるといったレベルです。</p>
+							<p>動きのあるサイト作成が可能です。</p>
 						</div>
 					</div>
 				</li>
@@ -115,7 +127,7 @@
 							<div class="star"><p>★☆☆</p></div>
 						</div>
 						<div class="skill_txt">
-							<p>基本的なことは学習済みですが、自力でサクサク実装するのはまだ難しいです。</p>
+							<p>動きのあるサイト作成が可能です。</p>
 						</div>
 					</div>
 				</li>
@@ -129,7 +141,7 @@
 							<div class="star"><p>★☆☆</p></div>
 						</div>
 						<div class="skill_txt">
-							<p>ブログで使用中。</p>
+							<p>自作テーマ作成可能です。</p>
 						</div>
 					</div>
 				</li>
@@ -143,7 +155,7 @@
 							<div class="star"><p>★☆☆</p></div>
 						</div>
 						<div class="skill_txt">
-							<p>実務経験はありませんが、ある程度は使えます。このポートフォリオもGitHubを使っています。</p>
+							<p>このポートフォリオもGitHubを使っています。</p>
 						</div>
 					</div>
 				</li>
@@ -157,28 +169,39 @@
 							<div class="star"><p>★★☆</p></div>
 						</div>
 						<div class="skill_txt">
-							<p>書き出し・サイズ調整・透過など基本的な機能は使えます。</p>
+							<p>書き出し・サイズ調整・透過などができます。</p>
 						</div>
 					</div>					
 				</li>
 				<li>
 					<div class="skill_icon">
-						<span class="devicons devicons-illustrator"></span>
+						<span class="devicons devicons-sass"></span>
 					</div>
 					<div class="skill_desc">
 						<div class="ttl02">
-							<h3>Illustrator</h3>
-							<div class="star"><p>☆☆☆</p></div>
+							<h3>Sass</h3>
+							<div class="star"><p>★★☆</p></div>
 						</div>
 						<div class="skill_txt">
-							<p>使用経験なし。</p>
+							<p>効率よくスピーディーにコーディングすることを目指しています。</p>
 						</div>
 					</div>
 				</li>
 			</ul>			
 		</div>
 	</section>
-	<section id="blog">
+	<section id="works" class="wow fadeIn">
+		<div class="inner">
+			<div class="ttl01">
+				<h2>Works<span>制作事例</span></h2>
+			</div>
+			<ul class="works_list">
+				<li class="works_item -mb"><img src="img/work1.png" alt="事例1"></li>
+				<li class="works_item -mb"><img src="img/work2.png" alt="事例2"></li>
+				<li class="works_item"><img src="img/work2.png" alt="事例3"></li>
+			</ul>
+	</section>
+	<!-- <section id="blog" class="wow fadeIn">
 		<div class="inner">
 			<div class="blog_txt">
 				<div class="ttl01">
@@ -190,35 +213,45 @@
 				</div>
 			</div>
 			<div class="blog_img">
-				<img src="images/about_pic.png" alt="tsubuko写真">
+				<img src="img/about_pic.png" alt="tsubuko写真">
 			</div>
 		</div>
-	</section>
-	<section id="study">
+	</section> -->
+	<section id="services" class="wow fadeIn">
 		<div class="inner">
 			<div class="ttl01">
-				<h2>Study<span>学びのこと</span></h2>
+				<h2>Services<span>サービス内容</span></h2>
 			</div>
-			<div class="study_wrapper">
+			<div class="services_wrapper">
 				<ul>
 					<li>
 						<div class="ttl02">
-							<h3>Sass</h3>
+							<h3>LP制作</h3>
 						</div>
-						<div class="study_desc">
-							<p>もっと効率よくCSSのコーディングができるようになりたい。</p>
+						<div class="services_desc">
+							<p class="-mb">Webページを作成して商品を宣伝したい、新しいサービスを詳しく紹介したい、といったご要望にお応えします。</p>
+							<p>価格：10,000円〜</p>
+							<p>納期目安：3～4週間前後</p>
+							<p>デザイン / コーディング込み</p>
 						</div>
 					</li>
 					<li>
 						<div class="ttl02">
-							<h3>命名規則&nbsp;BEM</h3>
+							<h3>ホームページ作成</h3>
 						</div>
-						<div class="study_desc">
-							<p>分かりやすい命名方法を模索中…。</p>
+						<div class="services_desc">
+							<p class="-mb">自社ホームページが欲しいと考えている方はこちら！おしゃれで見やすいホームページを細部まで丁寧にお作りします。</p>
+							<p>価格：30,000円〜</p>
+							<p>納期目安：3～4週間前後</p>
+							<p>デザイン / コーディング込み</p>
 						</div>
 					</li>
 				</ul>
-				
+				<hr>
+				<div class="services_moreinfo">
+					<p>※レスポンシブ(スマホ)対応のみ、コーディングのみの対応も可能です。</p>		
+					<p>※詳しい費用はお問い合わせ時にご確認ください。</p>	
+				</div>		
 			</div>
 		</div>
 	</section>
@@ -232,6 +265,13 @@
 			</small>
 		</div>
 	</footer>
+	<div class="floating">
+	  <a href="#"><i class="fas fa-chevron-up"></i></a>
+	</div>
+	<!-- wow -->
+	<script>
+		new WOW().init();
+	</script>
 </body>
 
 </html>
